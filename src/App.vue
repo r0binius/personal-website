@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const name = 'gobin'
-const tagline = 'Music Producer · Developer'
+const tagline = 'music production · art · development'
 </script>
 
 <template>
@@ -9,14 +9,44 @@ const tagline = 'Music Producer · Developer'
     <p class="tagline">{{ tagline }}</p>
 
     <nav class="links">
+      <a href="/about">About</a>
       <a href="/music">Music</a>
       <a href="/projects">Projects</a>
-      <a href="https://github.com/r0binius" target="_blank">GitHub</a>
+      <a href="/blog">Blog</a>
     </nav>
+
+    <div class="social-links">
+      <a
+        href="https://codeberg.org/r0binius"
+        target="_blank"
+        title="Codeberg"
+        aria-label="Codeberg"
+      >
+        <img src="@/assets/icons/git.svg" alt="Codeberg" class="social-icon" />
+      </a>
+      <a
+        href="https://open.spotify.com/artist/..."
+        target="_blank"
+        title="Spotify"
+        aria-label="Spotify"
+      >
+        <img src="@/assets/icons/spotify.svg" alt="Spotify" class="social-icon" />
+      </a>
+      <a
+        href="https://soundcloud.com/..."
+        target="_blank"
+        title="SoundCloud"
+        aria-label="SoundCloud"
+      >
+        <img src="@/assets/icons/soundcloud.svg" alt="SoundCloud" class="social-icon" />
+      </a>
+    </div>
   </main>
 </template>
 
 <style scoped>
+@import url('assets/css/fonts.css');
+
 .container {
   height: 100vh;
   display: flex;
@@ -24,8 +54,8 @@ const tagline = 'Music Producer · Developer'
   justify-content: center;
   align-items: center;
   gap: 16px;
-
   font-family:
+    'Velvetine',
     system-ui,
     -apple-system,
     sans-serif;
@@ -43,19 +73,37 @@ const tagline = 'Music Producer · Developer'
   opacity: 0.7;
 }
 
-.links {
+.links,
+.social-links {
   display: flex;
   gap: 20px;
   margin-top: 20px;
 }
 
-.links a {
+.links a,
+.social-links a {
   text-decoration: none;
   font-weight: 500;
-  color: #42b883;
+  color: #9b8ec7;
 }
 
-.links a:hover {
+.links a:hover,
+.social-links a:hover {
   text-decoration: underline;
+}
+
+.social-links {
+  margin-top: 30px;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  transition: color 0.3s;
+  color: #bda6ce;
+}
+
+.social-links a:hover .social-icon {
+  color: #bda6ce;
 }
 </style>
