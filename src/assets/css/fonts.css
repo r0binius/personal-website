@@ -12,3 +12,9 @@
   font-weight: 700;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Documenta';
+  src: url('../fonts/DTL-Documenta.woff2') format('woff2');
+  font-style: normal;
+}
