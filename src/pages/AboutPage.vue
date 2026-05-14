@@ -11,16 +11,11 @@
     </nav>
 
     <div class="social-links">
-      <a
-        href="https://codeberg.org/r0binius"
-        target="_blank"
-        title="Codeberg"
-        aria-label="Codeberg"
-      >
+      <a href="https://codeberg.org/gobin" target="_blank" title="Codeberg" aria-label="Codeberg">
         <img src="@/assets/icons/git.svg" alt="Codeberg" class="social-icon" />
       </a>
       <a
-        href="https://open.spotify.com/artist/..."
+        href="https://open.spotify.com/artist/2UsoXMwksvwrzBnQIVWolQ"
         target="_blank"
         title="Spotify"
         aria-label="Spotify"
@@ -40,8 +35,8 @@
 </template>
 
 <script setup lang="ts">
-const name = 'gobin'
-const tagline = 'music production · art · development'
+const name = 'about'
+const tagline = 'hi I like trains'
 </script>
 
 <style scoped>
